@@ -8,8 +8,8 @@ from .config import Config, config, get_config
 from .logging_config import logger, setup_logging
 
 from .parser import UnifiedParser, create_parser
-from .recognition import UnifiedRecognizer
-from .validation import ConfidenceScorer, ReverseValidator, get_review_status
+from .recognition import UnifiedRecognizer, get_review_status
+from .validation import ConfidenceScorer, ReverseValidator
 from .review import ReviewManager, create_review_queue
 from .storage import JSONStorage, SQLiteStorage, Neo4jStorage
 from .engine import HighwayCalculator, HighwayEngine, LODManager, create_sample_data
@@ -28,10 +28,10 @@ __all__ = [
     'UnifiedParser', 'create_parser',
     
     # Recognition
-    'UnifiedRecognizer',
+    'UnifiedRecognizer', 'get_review_status',
     
     # Validation
-    'ConfidenceScorer', 'ReverseValidator', 'get_review_status',
+    'ConfidenceScorer', 'ReverseValidator',
     
     # Review
     'ReviewManager', 'create_review_queue',

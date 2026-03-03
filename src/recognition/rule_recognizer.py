@@ -11,7 +11,7 @@ class RuleRecognizer:
     """规则引擎"""
     
     # 桩号正则
-    STAKE_PATTERN = re.compile(r'(ZK|YK|K|K\d++)\+(\d{3})')
+    STAKE_PATTERN = re.compile(r'(ZK|YK|K)\+(\d{3})')
     
     # 参数正则
     RADIUS_PATTERN = re.compile(r'R\s*[=：:]?\s*(\d+\.?\d*)', re.IGNORECASE)
