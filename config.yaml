@@ -1,0 +1,51 @@
+# Highway Parameter Engine 配置
+
+# 应用配置
+[app]
+name = "Highway Parameter Engine"
+version = "2.0.0"
+debug = false
+
+# 存储配置
+[storage]
+type = "sqlite"  # json/sqlite/neo4j
+path = "highway.db"
+
+# Neo4j配置 (如果使用)
+[neo4j]
+uri = "bolt://localhost:7687"
+user = "neo4j"
+password = "password"
+
+# MiniMax配置
+[minimax]
+api_key = ""
+model = "abab6.5s-chat"
+
+# 计算配置
+[calculation]
+default_lod = "LOD1"
+default_interval = 100
+
+# LOD设置
+[lod]
+LOD0_interval = 50
+LOD1_interval = 10
+LOD2_interval = 0.5
+error_threshold_upgrade = 0.05
+
+# 验证配置
+[validation]
+auto_approve_threshold = 0.9
+review_threshold = 0.7
+
+# API配置
+[api]
+host = "0.0.0.0"
+port = 8000
+cors_origins = "*"
+
+# 日志配置
+[logging]
+level = "INFO"
+file = "highway.log"
