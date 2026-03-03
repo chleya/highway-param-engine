@@ -13,9 +13,9 @@
 - [x] 规则引擎快速匹配
 - [x] 置信度评分
 
-## 阶段三：验证与复核 (
+## 阶段三：验证与复核 (1周) ✅
 
-- [x1周) ✅] 反向坐标验证
+- [x] 反向坐标验证
 - [x] 一致性检查
 - [x] 人工复核界面/接口
 - [x] 反馈优化Prompt
@@ -33,20 +33,18 @@
 - [x] 横断扫掠
 - [x] LOD动态采样
 
-## 阶段六：API服务
+## 阶段六：API服务 ✅
 
-- [ ] FastAPI接口
-- [ ] 任务队列
-- [ ] Docker部署
+- [x] FastAPI接口
+- [ ] 任务队列 (可选)
+- [x] Docker部署
 
 ---
 
-## 当前进度
+## 完成！🎉
 
-- Parser: DXF/PDF/OCR ✅
-- Recognition: LLM + 规则 ✅
-- Validation: 置信度 + 反向验证 ✅
-- Review: 人工复核队列 ✅
-- Storage: JSON/SQLite/Neo4j ✅
-- Engine: 参数计算 ✅
-- API: 待开发
+运行API服务:
+```bash
+pip install -r requirements-api.txt
+python -m uvicorn api.main:app --reload
+```
