@@ -1,0 +1,6 @@
+ezdxf>=0.18
+pdfplumber>=0.10
+pytesseract>=0.3
+Pillow>=10
+neo4j>=5
+requests>=2.28
